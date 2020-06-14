@@ -1,0 +1,24 @@
+/******************************************************************************
+ *
+ * MAC0110 - Introdução à Computação
+ * Aluno: Eduardo Rocha Laurentino
+ * Numero USP: 8988212
+ * Tarefa: Ex. 5 - Outros sons - Relatório
+ * Data: 09/05/2017
+ *
+ * DECLARO QUE SOU O ÚNICO AUTOR E RESPONSÁVEL POR ESTE RELATÓRIO.
+ ******************************************************************************/
+
+Nesse exercício escolhi, como implementação alternativa no cálculo de a[i], a fórmula a[i] = .997*(9*a[j] + a[j+5])/10;
+
+Experimentei algumas possibilidades e escolhi essa por ser a que fornece o som mais estranho para mim. Não entendo nada de música e tenho dificuldades em distinguir notas, então meu único critério foi ir em direção ao mais estranho. 
+
+Para implementar o programa com possibilidade de cálculo alternativo de a[i] a partir da quantidade de entradas, pensei em duas possibilidades:
+
+(1) mexer na função "public static double[] wave(double hz, double d)" ou 
+
+(2) criar uma função wave adicional ("public static double[] waveOPICIONAL(double hz, double d)") e 
+
+mexer na função note (de "public static double[] note(int pitch, double duration)" para "public static double[] note(int pitch, double duration, boolean ativar_opcional)"). 
+
+Optei por (2) para não precisar mudar a assinatura de "wave". 
